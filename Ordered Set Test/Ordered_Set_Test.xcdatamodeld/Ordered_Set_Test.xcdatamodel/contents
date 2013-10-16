@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3394" systemVersion="13A584" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="EntityChild" representedClassName="EntityChild" syncable="YES">
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EntityParent" inverseName="children" inverseEntity="EntityParent" syncable="YES"/>
+    </entity>
+    <entity name="EntityParent" representedClassName="EntityParent" syncable="YES">
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="EntityChild" inverseName="parent" inverseEntity="EntityChild" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EntityParent" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="EntityChild" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

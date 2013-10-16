@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD46BA03180F38110005E7B8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD46BA02180F38110005E7B8 /* JRSwizzle.m */; };
+		FD46BA13180F38920005E7B8 /* NSMutableOrderedSet+DiffPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = FD46BA12180F38920005E7B8 /* NSMutableOrderedSet+DiffPatch.m */; };
+		FD46BA16180F3E8B0005E7B8 /* NSIndexSet+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = FD46BA15180F3E8B0005E7B8 /* NSIndexSet+Ranges.m */; };
+		FDB6239217F2B0CA004A096A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB6239117F2B0CA004A096A /* Cocoa.framework */; };
+		FDB6239C17F2B0CA004A096A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB6239A17F2B0CA004A096A /* InfoPlist.strings */; };
+		FDB6239E17F2B0CA004A096A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB6239D17F2B0CA004A096A /* main.m */; };
+		FDB623A217F2B0CA004A096A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FDB623A017F2B0CA004A096A /* Credits.rtf */; };
+		FDB623A517F2B0CA004A096A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB623A417F2B0CA004A096A /* AppDelegate.m */; };
+		FDB623A817F2B0CA004A096A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB623A617F2B0CA004A096A /* MainMenu.xib */; };
+		FDB623AB17F2B0CA004A096A /* Ordered_Set_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDB623A917F2B0CA004A096A /* Ordered_Set_Test.xcdatamodeld */; };
+		FDB623AD17F2B0CA004A096A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB623AC17F2B0CA004A096A /* Images.xcassets */; };
+		FDB623B417F2B0CA004A096A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB623B317F2B0CA004A096A /* XCTest.framework */; };
+		FDB623B517F2B0CA004A096A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB6239117F2B0CA004A096A /* Cocoa.framework */; };
+		FDB623BD17F2B0CA004A096A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB623BB17F2B0CA004A096A /* InfoPlist.strings */; };
+		FDB623BF17F2B0CA004A096A /* Ordered_Set_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB623BE17F2B0CA004A096A /* Ordered_Set_TestTests.m */; };
+		FDB623CA17F2B12D004A096A /* OrderedSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB623C917F2B12D004A096A /* OrderedSetTest.m */; };
+		FDB623CD17F2B8C0004A096A /* EntityChild.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB623CC17F2B8C0004A096A /* EntityChild.m */; };
+		FDB623D017F2B8C1004A096A /* EntityParent.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB623CF17F2B8C1004A096A /* EntityParent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDB623B617F2B0CA004A096A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB6238617F2B0CA004A096A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB6238D17F2B0CA004A096A;
+			remoteInfo = "Ordered Set Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD46BA01180F38110005E7B8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		FD46BA02180F38110005E7B8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		FD46BA11180F38920005E7B8 /* NSMutableOrderedSet+DiffPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableOrderedSet+DiffPatch.h"; sourceTree = "<group>"; };
+		FD46BA12180F38920005E7B8 /* NSMutableOrderedSet+DiffPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableOrderedSet+DiffPatch.m"; sourceTree = "<group>"; };
+		FD46BA14180F3E8B0005E7B8 /* NSIndexSet+Ranges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+Ranges.h"; sourceTree = "<group>"; };
+		FD46BA15180F3E8B0005E7B8 /* NSIndexSet+Ranges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+Ranges.m"; sourceTree = "<group>"; };
+		FDB6238E17F2B0CA004A096A /* Ordered Set Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ordered Set Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB6239117F2B0CA004A096A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FDB6239417F2B0CA004A096A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FDB6239517F2B0CA004A096A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FDB6239617F2B0CA004A096A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FDB6239917F2B0CA004A096A /* Ordered Set Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ordered Set Test-Info.plist"; sourceTree = "<group>"; };
+		FDB6239B17F2B0CA004A096A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FDB6239D17F2B0CA004A096A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDB6239F17F2B0CA004A096A /* Ordered Set Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ordered Set Test-Prefix.pch"; sourceTree = "<group>"; };
+		FDB623A117F2B0CA004A096A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FDB623A317F2B0CA004A096A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDB623A417F2B0CA004A096A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDB623A717F2B0CA004A096A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FDB623AA17F2B0CA004A096A /* Ordered_Set_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ordered_Set_Test.xcdatamodel; sourceTree = "<group>"; };
+		FDB623AC17F2B0CA004A096A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FDB623B217F2B0CA004A096A /* Ordered Set TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ordered Set TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB623B317F2B0CA004A096A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FDB623BA17F2B0CA004A096A /* Ordered Set TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ordered Set TestTests-Info.plist"; sourceTree = "<group>"; };
+		FDB623BC17F2B0CA004A096A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FDB623BE17F2B0CA004A096A /* Ordered_Set_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ordered_Set_TestTests.m; sourceTree = "<group>"; };
+		FDB623C817F2B12D004A096A /* OrderedSetTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedSetTest.h; sourceTree = "<group>"; };
+		FDB623C917F2B12D004A096A /* OrderedSetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedSetTest.m; sourceTree = "<group>"; };
+		FDB623CB17F2B8C0004A096A /* EntityChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityChild.h; sourceTree = "<group>"; };
+		FDB623CC17F2B8C0004A096A /* EntityChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityChild.m; sourceTree = "<group>"; };
+		FDB623CE17F2B8C1004A096A /* EntityParent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityParent.h; sourceTree = "<group>"; };
+		FDB623CF17F2B8C1004A096A /* EntityParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityParent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDB6238B17F2B0CA004A096A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB6239217F2B0CA004A096A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB623AF17F2B0CA004A096A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB623B517F2B0CA004A096A /* Cocoa.framework in Frameworks */,
+				FDB623B417F2B0CA004A096A /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDB6238517F2B0CA004A096A = {
+			isa = PBXGroup;
+			children = (
+				FDB6239717F2B0CA004A096A /* Ordered Set Test */,
+				FDB623B817F2B0CA004A096A /* Ordered Set TestTests */,
+				FDB6239017F2B0CA004A096A /* Frameworks */,
+				FDB6238F17F2B0CA004A096A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDB6238F17F2B0CA004A096A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDB6238E17F2B0CA004A096A /* Ordered Set Test.app */,
+				FDB623B217F2B0CA004A096A /* Ordered Set TestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDB6239017F2B0CA004A096A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDB6239117F2B0CA004A096A /* Cocoa.framework */,
+				FDB623B317F2B0CA004A096A /* XCTest.framework */,
+				FDB6239317F2B0CA004A096A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDB6239317F2B0CA004A096A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDB6239417F2B0CA004A096A /* AppKit.framework */,
+				FDB6239517F2B0CA004A096A /* CoreData.framework */,
+				FDB6239617F2B0CA004A096A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FDB6239717F2B0CA004A096A /* Ordered Set Test */ = {
+			isa = PBXGroup;
+			children = (
+				FDB623A317F2B0CA004A096A /* AppDelegate.h */,
+				FDB623A417F2B0CA004A096A /* AppDelegate.m */,
+				FDB623C817F2B12D004A096A /* OrderedSetTest.h */,
+				FDB623C917F2B12D004A096A /* OrderedSetTest.m */,
+				FD46BA11180F38920005E7B8 /* NSMutableOrderedSet+DiffPatch.h */,
+				FD46BA12180F38920005E7B8 /* NSMutableOrderedSet+DiffPatch.m */,
+				FD46BA14180F3E8B0005E7B8 /* NSIndexSet+Ranges.h */,
+				FD46BA15180F3E8B0005E7B8 /* NSIndexSet+Ranges.m */,
+				FD46BA01180F38110005E7B8 /* JRSwizzle.h */,
+				FD46BA02180F38110005E7B8 /* JRSwizzle.m */,
+				FDB623A617F2B0CA004A096A /* MainMenu.xib */,
+				FDB623AC17F2B0CA004A096A /* Images.xcassets */,
+				FDB623A917F2B0CA004A096A /* Ordered_Set_Test.xcdatamodeld */,
+				FDB623CE17F2B8C1004A096A /* EntityParent.h */,
+				FDB623CF17F2B8C1004A096A /* EntityParent.m */,
+				FDB623CB17F2B8C0004A096A /* EntityChild.h */,
+				FDB623CC17F2B8C0004A096A /* EntityChild.m */,
+				FDB6239817F2B0CA004A096A /* Supporting Files */,
+			);
+			path = "Ordered Set Test";
+			sourceTree = "<group>";
+		};
+		FDB6239817F2B0CA004A096A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDB6239917F2B0CA004A096A /* Ordered Set Test-Info.plist */,
+				FDB6239A17F2B0CA004A096A /* InfoPlist.strings */,
+				FDB6239D17F2B0CA004A096A /* main.m */,
+				FDB6239F17F2B0CA004A096A /* Ordered Set Test-Prefix.pch */,
+				FDB623A017F2B0CA004A096A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDB623B817F2B0CA004A096A /* Ordered Set TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB623BE17F2B0CA004A096A /* Ordered_Set_TestTests.m */,
+				FDB623B917F2B0CA004A096A /* Supporting Files */,
+			);
+			path = "Ordered Set TestTests";
+			sourceTree = "<group>";
+		};
+		FDB623B917F2B0CA004A096A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDB623BA17F2B0CA004A096A /* Ordered Set TestTests-Info.plist */,
+				FDB623BB17F2B0CA004A096A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDB6238D17F2B0CA004A096A /* Ordered Set Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB623C217F2B0CA004A096A /* Build configuration list for PBXNativeTarget "Ordered Set Test" */;
+			buildPhases = (
+				FDB6238A17F2B0CA004A096A /* Sources */,
+				FDB6238B17F2B0CA004A096A /* Frameworks */,
+				FDB6238C17F2B0CA004A096A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ordered Set Test";
+			productName = "Ordered Set Test";
+			productReference = FDB6238E17F2B0CA004A096A /* Ordered Set Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDB623B117F2B0CA004A096A /* Ordered Set TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB623C517F2B0CA004A096A /* Build configuration list for PBXNativeTarget "Ordered Set TestTests" */;
+			buildPhases = (
+				FDB623AE17F2B0CA004A096A /* Sources */,
+				FDB623AF17F2B0CA004A096A /* Frameworks */,
+				FDB623B017F2B0CA004A096A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB623B717F2B0CA004A096A /* PBXTargetDependency */,
+			);
+			name = "Ordered Set TestTests";
+			productName = "Ordered Set TestTests";
+			productReference = FDB623B217F2B0CA004A096A /* Ordered Set TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDB6238617F2B0CA004A096A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Basil Shkara";
+				TargetAttributes = {
+					FDB623B117F2B0CA004A096A = {
+						TestTargetID = FDB6238D17F2B0CA004A096A;
+					};
+				};
+			};
+			buildConfigurationList = FDB6238917F2B0CA004A096A /* Build configuration list for PBXProject "Ordered Set Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDB6238517F2B0CA004A096A;
+			productRefGroup = FDB6238F17F2B0CA004A096A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB6238D17F2B0CA004A096A /* Ordered Set Test */,
+				FDB623B117F2B0CA004A096A /* Ordered Set TestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDB6238C17F2B0CA004A096A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB6239C17F2B0CA004A096A /* InfoPlist.strings in Resources */,
+				FDB623AD17F2B0CA004A096A /* Images.xcassets in Resources */,
+				FDB623A217F2B0CA004A096A /* Credits.rtf in Resources */,
+				FDB623A817F2B0CA004A096A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB623B017F2B0CA004A096A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB623BD17F2B0CA004A096A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDB6238A17F2B0CA004A096A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD46BA03180F38110005E7B8 /* JRSwizzle.m in Sources */,
+				FDB623CA17F2B12D004A096A /* OrderedSetTest.m in Sources */,
+				FD46BA13180F38920005E7B8 /* NSMutableOrderedSet+DiffPatch.m in Sources */,
+				FD46BA16180F3E8B0005E7B8 /* NSIndexSet+Ranges.m in Sources */,
+				FDB623A517F2B0CA004A096A /* AppDelegate.m in Sources */,
+				FDB623D017F2B8C1004A096A /* EntityParent.m in Sources */,
+				FDB623AB17F2B0CA004A096A /* Ordered_Set_Test.xcdatamodeld in Sources */,
+				FDB623CD17F2B8C0004A096A /* EntityChild.m in Sources */,
+				FDB6239E17F2B0CA004A096A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB623AE17F2B0CA004A096A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB623BF17F2B0CA004A096A /* Ordered_Set_TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDB623B717F2B0CA004A096A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB6238D17F2B0CA004A096A /* Ordered Set Test */;
+			targetProxy = FDB623B617F2B0CA004A096A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDB6239A17F2B0CA004A096A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB6239B17F2B0CA004A096A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FDB623A017F2B0CA004A096A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB623A117F2B0CA004A096A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FDB623A617F2B0CA004A096A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB623A717F2B0CA004A096A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		FDB623BB17F2B0CA004A096A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB623BC17F2B0CA004A096A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDB623C017F2B0CA004A096A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FDB623C117F2B0CA004A096A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FDB623C317F2B0CA004A096A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ordered Set Test/Ordered Set Test-Prefix.pch";
+				INFOPLIST_FILE = "Ordered Set Test/Ordered Set Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FDB623C417F2B0CA004A096A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ordered Set Test/Ordered Set Test-Prefix.pch";
+				INFOPLIST_FILE = "Ordered Set Test/Ordered Set Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FDB623C617F2B0CA004A096A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ordered Set Test.app/Contents/MacOS/Ordered Set Test";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ordered Set Test/Ordered Set Test-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ordered Set TestTests/Ordered Set TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FDB623C717F2B0CA004A096A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ordered Set Test.app/Contents/MacOS/Ordered Set Test";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ordered Set Test/Ordered Set Test-Prefix.pch";
+				INFOPLIST_FILE = "Ordered Set TestTests/Ordered Set TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDB6238917F2B0CA004A096A /* Build configuration list for PBXProject "Ordered Set Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB623C017F2B0CA004A096A /* Debug */,
+				FDB623C117F2B0CA004A096A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB623C217F2B0CA004A096A /* Build configuration list for PBXNativeTarget "Ordered Set Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB623C317F2B0CA004A096A /* Debug */,
+				FDB623C417F2B0CA004A096A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB623C517F2B0CA004A096A /* Build configuration list for PBXNativeTarget "Ordered Set TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB623C617F2B0CA004A096A /* Debug */,
+				FDB623C717F2B0CA004A096A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDB623A917F2B0CA004A096A /* Ordered_Set_Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDB623AA17F2B0CA004A096A /* Ordered_Set_Test.xcdatamodel */,
+			);
+			currentVersion = FDB623AA17F2B0CA004A096A /* Ordered_Set_Test.xcdatamodel */;
+			path = Ordered_Set_Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FDB6238617F2B0CA004A096A /* Project object */;
+}
