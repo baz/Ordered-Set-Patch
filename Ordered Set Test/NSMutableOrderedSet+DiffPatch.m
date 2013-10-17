@@ -14,20 +14,25 @@
 
 
 + (void)load {
-	[NSMutableOrderedSet jr_swizzleMethod:@selector(insertObjects:atIndexes:) withMethod:@selector(ost_insertObjects:atIndexes:) error:nil];
-}
-
-- (void)ost_insertObjects:(NSArray *)objects atIndexes:(NSIndexSet *)indexes {
-	if ([indexes ost_containsMultipleRanges]) {
-		[self addObjectsFromArray:objects];
-	} else {
-		[self ost_insertObjects:objects atIndexes:indexes];
+	// This patch only needed for 10.9
+	if (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_8) {
+		[NSMutableOrderedSet jr_swizzleMethod:@selector(insertObjects:atIndexes:) withMethod:@selector(ost_insertObjects:atIndexes:) error:nil];
 	}
 }
 
-
-// TODO Occurs in situations where we have a parent context and a confined context is saving to it by flushing periodically
-// TODO Test on 10.8
+- (void)ost_insertObjects:(NSArray *)objects atIndexes:(NSIndexSet *)indexes {
+	@try {
+		[self ost_insertObjects:objects atIndexes:indexes];
+	}
+	@catch (NSException *exception) {
+		NSLog(@"CATCH");
+		if ([indexes ost_containsMultipleRanges]) {
+			[self addObjectsFromArray:objects];
+		} else {
+			@throw(exception);
+		}
+	}
+}
 
 
 @end

@@ -9,6 +9,7 @@
 #import "OrderedSetTest.h"
 #import "EntityParent.h"
 #import "EntityChild.h"
+#import "NSMutableOrderedSet+DiffPatch.h"
 
 @interface OrderedSetTest()
 	@property (nonatomic, strong) NSPersistentStoreCoordinator *coordinator;
@@ -53,8 +54,9 @@
 		}
 	}
 
-	NSLog(@"SAVING CONFINED AGAIN");
+	NSLog(@"SAVING CONFINED AGAIN %lu",childrenProxy.count);
 	[confinedContext save:nil];
+	NSLog(@"DONE WITH %lu",childrenProxy.count);
 }
 
 
